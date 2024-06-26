@@ -108,6 +108,14 @@ http://:5@0:8080/requests/status.xml?command=in_play&input=.m3u
 
 You can also save further space by binding VLC to port 80, saving 15 bytes.
 
+### Further Optimizations
+
+Turns out the final request is not needed, see `optimization.m3u8`.
+
+Also, appending `?.m3u` can be used to make random links get interpreted as
+`m3u`s, optimizing it down to 29 bytes (but thats boring!). See `lame.m3u8` for
+that.
+
 ## References
 
 * [1] https://wiki.videolan.org/Demuxdump/
