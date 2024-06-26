@@ -113,7 +113,7 @@ You can also save further space by binding VLC to port 80, saving 15 bytes.
 Turns out the final request is not needed, see `optimization.m3u8`.
 
 Also, appending `?.m3u` can be used to make random links get interpreted as
-`m3u`s, optimizing it down to 29 bytes (but thats boring!). See `lame.m3u8` for
+`m3u`s, optimizing it down to 28 bytes (but thats boring!). See `lame.m3u8` for
 that.
 
 ## References
