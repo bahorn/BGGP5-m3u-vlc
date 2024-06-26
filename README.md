@@ -76,7 +76,7 @@ After some experimenting, I found the following VLM commands to write a file
 downloaded over HTTP to disk:
 
 ```
-new c broadcast enabled input https://binary.golf/5/5 option demux=dump option demuxdump-file=.m3u
+new c vod enabled input https://binary.golf/5/5 option demux=dump option demuxdump-file=.m3u
 control c play
 ```
 
@@ -87,8 +87,8 @@ I did experiment with using stream outputs, but I realised I could just use
 
 So, we can then run our vlm commands by putting the following in the file:
 ```
-http://:5@0:8080/requests/vlm_cmd.xml?command=new c broadcast enabled input https://binary.golf/5/5 option demux%3ddump option demuxdump-file%3d.m3u
-http://:5@0:8080/requests/vlm_cmd.xml?command=control c playlist
+http://:5@0:8080/requests/vlm_cmd.xml?command=new c vod enabled input https://binary.golf/5/5 option demux%3ddump option demuxdump-file%3d.m3u
+http://:5@0:8080/requests/vlm_cmd.xml?command=control c play
 ```
 
 `https://:5@0:8080/` does HTTP auth with the password 5, and 0 is an alias for
