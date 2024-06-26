@@ -1,8 +1,11 @@
-# M3U for VLC
+# BGGP5 - A M3U for VLC
 
 aka SSRF'ing VLCs HTTP interface.
 
-## TLDR
+Should support Linux and MacOS, do need to leave click off the playlist and
+reclick it on macos (something to do with the erros this causes).
+
+## TL;DR
 
 * .m3us as VLC supports them can just be a list of URLs, which VLC will send
   requests to fetch. You don't need "#EXTM3U", VLC doesn't care.
@@ -44,7 +47,7 @@ We have to run VLC with some extra flags to enable the http server:
 vlc -I qt --extraintf http --http-password 5 --http-port 8080 payload.m3u8
 ```
 
-* Setting the default interface to QT (or macos on macos)
+* Setting the default interface to QT (or macosx on macos)
 * Enable the HTTP server, set a password (a requirement) and the port.
 
 We need to set the port as I hit different port numbers on macos and linux.
@@ -104,7 +107,6 @@ display:
 ```
 http://:5@0:8080/requests/status.xml?command=in_play&input=.m3u
 ```
-
 
 ## References
 
