@@ -20,6 +20,8 @@ reclick it on macos (something to do with the erros this causes).
 * So if you download `https://binary.golf/5/5`, save it as a m3u and open it
   and the contents will be displayed right in the playlist!
 
+![In Action](https://github.com/bahorn/BGGP5-m3u-vlc/blob/master/img/pic.png?raw=true)
+
 ## Write up
 
 ### From just the command line
