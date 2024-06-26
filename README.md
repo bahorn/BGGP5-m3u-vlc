@@ -101,6 +101,8 @@ display:
 http://:5@0:8080/requests/status.xml?command=in_play&input=.m3u
 ```
 
+You can also save further space by binding VLC to port 80, saving 15 bytes.
+
 ## References
 
 * [1] https://wiki.videolan.org/Demuxdump/
