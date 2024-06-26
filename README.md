@@ -2,15 +2,18 @@
 
 aka SSRF'ing VLCs HTTP interface.
 
-Should support Linux and MacOS, do need to leave click off the playlist and
-reclick it on macos (something to do with the erros this causes).
+Should support Linux and MacOS, you may need to click off the playlist and
+reclick it on macos to get VLC to show the updated playlist.
+(something to do with the error this causes, I think).
 
 ## TL;DR
 
-* .m3us as VLC supports them can just be a list of URLs, which VLC will send
-  requests to fetch. You don't need "#EXTM3U", VLC doesn't care.
-* When opened they will add their contents to the active playlist, with the
-  filename being the name that shows up in the playlist.
+* `.m3u`s as VLC supports them can just be a list of URLs, which VLC will send
+  requests to fetch. You don't need anything else like "#EXTM3U" as VLC doesn't
+  care.
+* When opened, `m3u`s will add their contents to the active playlist, with the
+  filename being the name that shows up in the playlist if not otherwise
+  overridden.
 * VLC has an incredibly insecure http interface, which allows you to just send
   GET requests (with the requirement of HTTP auth) to access its commands.
 * The interface lets you use VLM commands, which lets you script VLC to create
