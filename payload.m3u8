@@ -1,3 +1,3 @@
-http://:5@0:8080/requests/vlm_cmd.xml?command=new c vod enabled input https://binary.golf/5/5 option demux%3ddump option demuxdump-file%3d.m3u
+http://:5@0:8080/requests/vlm_cmd.xml?command=new c vod enabled input http://binary.golf/5/5 option demux%3ddump option demuxdump-file%3d.m3u
 http://:5@0:8080/requests/vlm_cmd.xml?command=control c play
 http://:5@0:8080/requests/status.xml?command=in_play&input=.m3u
