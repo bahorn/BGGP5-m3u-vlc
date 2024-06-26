@@ -95,8 +95,6 @@ http://:5@0:8080/requests/vlm_cmd.xml?command=control c playlist
 localhost we can use.
 We get to pass our command easily, just needing to manually urlencode `=`.
 
-VLC supports a few basic commands via the URI scheme.
-
 Finally, we can open the BGGP5 file we saved to disk as a m3u, and it'll
 display:
 ```
